@@ -1,0 +1,12 @@
+.exerciseList {
+    font-size: 14px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.exerciseList-active {
+    background-color: #0853a8;
+    color: white; 
+}

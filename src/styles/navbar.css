@@ -1,0 +1,31 @@
+.navbar {
+    background: rgba(252, 142, 172);
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+
+.navbar-left {
+    flex: 0.5;
+}
+
+.logo {
+    padding-left: 5%;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-right {
+    flex: 0.5;
+}
+
+.nav-links {
+    list-style: none;
+    padding-left: 30%;
+}
+
+.link-items {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 15px 0px 15px;
+}

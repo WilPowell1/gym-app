@@ -1,0 +1,22 @@
+.exercises {
+    text-align: center;
+    padding: 20px;
+}
+
+.exercises-container {
+    border: 2px solid black;
+}
+
+.exercise-types {
+    border: 2px solid black;
+}
+
+.exercise-groups {
+    display: inline-block;
+    padding: 0 50px 0 50px;
+}
+
+.individual-exercises {
+    background: green;
+}
+
