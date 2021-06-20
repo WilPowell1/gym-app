@@ -16,11 +16,6 @@ const DailyWorkoutForm = ({ addTask }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <h2 className="label-wrapper">
-                <label htmlFor="new-todo-input" className="label__lg">
-                    What needs to be done?
-                </label>
-            </h2>
             <input
                 type="text"
                 id="new-todo-input"

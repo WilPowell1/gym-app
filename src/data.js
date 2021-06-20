@@ -1,182 +1,182 @@
 export const back = [
     { 
         id: 1,
-        type1: "deadlifts",
+        type: "deadlifts",
     },
     {
         id: 2,
-        type2: "bent over rows",
+        type: "bent over rows",
     },
     {
         id: 3,
-        type3: "pull ups",
+        type: "pull ups",
     },
     {
         id: 4,
-        type4: "t-bar rows",
+        type: "t-bar rows",
     }
 ];
 
 export const quads = [
     { 
         id: 1,
-        type1: "back squats",
+        type: "back squats",
     },
     {
         id: 2,
-        type2: "front squats",
+        type: "front squats",
     },
     {
         id: 3,
-        type3: "leg press",
+        type: "leg press",
     },
     {
         id: 4,
-        type4: "hip belt squats",
+        type: "hip belt squats",
     },
 ];
 
 export const shoulders = [
     {
         id: 1,
-        type1: "overhead press",
+        type: "overhead press",
     },
     {
         id: 2,
-        type2: "push press",
+        type: "push press",
     },
     {
         id: 3,
-        type3: "lateral raises",
+        type: "lateral raises",
     },
     {
         id: 4,
-        type4: "rear delt flyes",
+        type: "rear delt flyes",
     },
 ]
 
 export const glutes = [
     {
         id: 1,
-        type1: "hip thrusts",
+        type: "hip thrusts",
     },
     {
         id: 2,
-        type2: "lunges",
+        type: "lunges",
     },
     {
         id: 3,
-        type3: "split squats",
+        type: "split squats",
     },
     {
         id: 4,
-        type4: "step ups",
+        type: "step ups",
     },
 ]
 
 export const abs = [
     {
         id: 1,
-        type1: "planks",
+        type: "planks",
     },
     {
         id: 2,
-        type2: "ab roll outs",
+        type: "ab roll outs",
     },
     {
         id: 3,
-        type3: "hanging knee raises",
+        type: "hanging knee raises",
     },
     {
         id: 4,
-        type4: "banded pallof press",
+        type: "banded pallof press",
     },
 ]
 
 export const chest = [
     {
         id: 1,
-        type1: "bench press",
+        type: "bench press",
     },
     {
         id: 2,
-        type2: "incline bench press",
+        type: "incline bench press",
     },
     {
         id: 3,
-        type3: "chest flyes",
+        type: "chest flyes",
     },
     {
         id: 4,
-        type4: "dips",
+        type: "dips",
     },
 ]
 
 export const hamstrings = [
     {
         id: 1,
-        type1: "romanian deadlifts",
+        type: "romanian deadlifts",
     },
     {
         id: 2,
-        type2: "good mornings",
+        type: "good mornings",
     },
     {
         id: 3,
-        type3: "back-extensions",
+        type: "back-extensions",
     },
     {
         id: 4,
-        type4: "power cleans",
+        type: "power cleans",
     },
 ]
 
 export const arms = [
     {
         id: 1,
-        type1: "bicep curls",
+        type: "bicep curls",
     },
     {
         id: 2,
-        type2: "chin ups",
+        type: "chin ups",
     },
     {
         id: 3,
-        type3: "skull crushers",
+        type: "skull crushers",
     },
     {
         id: 4,
-        type4: "press ups",
+        type: "press ups",
     },
 ]
 
 export const olympic = [
     {
         id: 1,
-        type1: "clean and jerk",
+        type: "clean and jerk",
     },
     {
         id: 2,
-        type2: "snatch",
+        type: "snatch",
     },
 ]
 
 export const strongwoman = [
     {
         id: 1,
-        type1: "farmers walks"
+        type: "farmers walks"
     },
     {
         id: 2,
-        type2: "tyre flips",
+        type: "tyre flips",
     },
     {
         id: 3,
-        type3: "atlas stones",
+        type: "atlas stones",
     },
     {
         id: 4,
-        type4: "super yoke",
+        type: "super yoke",
     },
 ]
  

@@ -12,9 +12,10 @@ import { back,
          olympic,
          strongwoman } from "../data";
 
-const Exercises = () => {
+const Exercises = ({ addTask }) => {
 
-    const [data, setData] = useState(["back"]);
+    const [data, setData] = useState([""]);
+    const [name, setName] = useState("");
     const [selected, setSelected] = useState([]);
     const listSelection = [
         {
@@ -92,6 +93,16 @@ const Exercises = () => {
         }
     }, [selected])
 
+    const handleChange = (event) => {
+        setName(event.target.value);
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        addTask(name);
+        setName("");
+    }
+
     return (
         <div className="exercises">
             <h3>Exercises</h3>
@@ -107,18 +118,12 @@ const Exercises = () => {
             </ul>
             <div className="exercise-types">
                 {data.map((d) => (
-                    <div className="exercise-groups">
-                        <div className="individual-exercises">
-                            {d.type1}
-                        </div>
-                        <div className="individual-exercises">
-                            {d.type2}
-                        </div>
-                        <div className="individual-exercises">
-                            {d.type3}
-                        </div>
-                        <div className="individual-exercises">
-                            {d.type4}
+                    <div className="exercise-groups" onSubmit={handleSubmit}>
+                        <div onChange={handleChange} className="individual-exercises">
+                            {d.type}
+                            <button type="submit" className="btn btn__primary btn__lg">
+                                Add
+                            </button>
                         </div>
                     </div>
                 ))}
