@@ -164,7 +164,7 @@ export const olympic = [
 export const strongwoman = [
     {
         id: 1,
-        type: "farmers walks"
+        type: "farmer's walks"
     },
     {
         id: 2,

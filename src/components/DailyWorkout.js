@@ -3,7 +3,7 @@ import { nanoid } from "nanoid";
 import DailyWorkoutList from "./DailyWorkoutList";
 import DailyWorkoutForm from "./DailyWorkoutForm";
 import DailyWorkoutFilter from "./DailyWorkoutFilter";
-/*import "../styles/dailyWorkout.css";*/
+import "../styles/dailyWorkout.css";
 
   const FILTER_MAP = {
     All: () => true,
@@ -48,7 +48,7 @@ const DailyWorkout = () => {
     setTasks(editLastTask);
   }
 
-  const taskList = tasks.filter(FILTER_MAP[filter]).map(task => ( 
+  const workoutList = tasks.filter(FILTER_MAP[filter]).map(task => ( 
     <DailyWorkoutList
       id={task.id} 
       name={task.name} 
@@ -70,25 +70,27 @@ const DailyWorkout = () => {
     />
   ));
 
-  const taskNoun = taskList.length !== 1 ? "tasks" : "task";
-  const headingText = `${taskList.length} ${taskNoun} remaining`;
+  const taskNoun = workoutList.length !== 1 ? "exercises" : "exercise";
+  const headingText = `${workoutList.length} ${taskNoun} remaining`;
 
   return (
-    <div className="todoapp stack-large">
-      <h1>today's workout</h1>
-      <DailyWorkoutForm addTask={addTask} />
-      <div className="filters btn-group stack-exception">
-        {filterList}
+    <div className="daily-workout">
+      <h1 className="workout-heading">today's workout</h1>
+      <div className="workout-box">
+        <DailyWorkoutForm addTask={addTask} />
+        <div className="filters">
+          {filterList}
+        </div>
+        <h2 id="list-heading">
+          {headingText}
+        </h2>
+        <ul
+          className="workout-list"
+          aria-labelledby="list-heading"
+        >
+          {workoutList}
+        </ul>
       </div>
-      <h2 id="list-heading">
-        {headingText}
-      </h2>
-      <ul
-        className="todo-list stack-large stack-exception"
-        aria-labelledby="list-heading"
-      >
-        {taskList}
-      </ul>
     </div>
   );
 }

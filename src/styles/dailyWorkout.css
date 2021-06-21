@@ -1,0 +1,50 @@
+.workout-heading {
+    text-align: center;
+    color: white;
+}
+
+.daily-workout::after {
+    content: "";
+    filter: blur(4px); 
+    position: absolute;
+    background: url("../images/barbell4.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: 10% 30%;
+    background-color: rgba(0, 40, 126, 0.3);
+    background-blend-mode: screen;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    min-height: 100%;
+}
+
+.workout-heading {
+    padding-bottom: 3%;
+}
+
+.workout-box {
+    background: rgba(252, 142, 172, 0.7);
+    margin: auto;
+    width: 50vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workout-list {
+    list-style-type: none;
+}
+
+#list-heading {
+    color: white;
+    font-weight: 100;
+}
+
+.workout-list {
+    color: white;
+}

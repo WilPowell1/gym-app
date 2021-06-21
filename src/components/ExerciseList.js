@@ -1,13 +1,14 @@
 import React from "react";
 import "../styles/exerciseList.css";
 
-const ExerciseList = ({ title, id, selected, setSelected }) => {
+const ExerciseList = ({ image, id, selected, setSelected }) => {
 
     return (
-        <li className={selected ? "exerciseList-active" : "exerciseList"}
-            onClick={() => setSelected(id)}>
-                {title}
-        </li>
+            <li className={selected ? "exerciseList-active" : "exerciseList"}
+                onClick={() => setSelected(id)}>
+                <img className="img" src={image} alt=""/>
+            </li>
+
     )
 }
 

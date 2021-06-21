@@ -1,61 +1,63 @@
+import absImage from "./logo-images/absImage.png";
+import armsImage from "./logo-images/armsImage.png";
+import backImage from "./logo-images/backImage.png";
+import chestImage from "./logo-images/chestImage.png";
+import gluteImage from "./logo-images/gluteImage.png";
+import hamstringImage from "./logo-images/hamstringImage.png";
+import olympicImage from "./logo-images/olympicImage.png";
+import quadImage from "./logo-images/quadImage.png";
+import shoulderImage from "./logo-images/shoulderImage.png";
+import strongImage from "./logo-images/strongImage.png";
 
-export const absImage = [
+export const imageData = [
     {
-    image: "../logo-images/absImage.png",
-    }
-]
-
-export const armsImage = [
+        id: "abs",
+        title: "abs",
+        image: absImage,
+    },
     {
-    image: "../logo-images/armsImage.png",
-    }
-]
-
-export const backImage = [
+        id: "arms",
+        title: "arms",
+        image: armsImage,
+    },
     {
-    image: "../logo-images/backImage.png",
-    }
-]
-
-export const chestImage = [
+        id: "back",
+        title: "back",
+        image: backImage,
+    },
     {
-    image: "../logo-images/chestImage.png",
-    }
-]
-
-export const gluteImage = [
+        id: "chest",
+        title: "chest",
+        image: chestImage,
+    },
     {
-    image: "../logo-images/gluteImage.png",
-    }
-]
-
-export const hamstringImage = [
+        id: "glutes",
+        title: "glutes",
+        image: gluteImage,
+    },
     {
-    image: "../logo-images/hamstringImage.png",
-    }
-]
-
-export const olympicImage = [
+        id: "hamstrings",
+        title: "hamstrings",
+        image: hamstringImage,
+    },
     {
-    image: "../logo-images/olympicImage.png",
-    }
-]
-
-export const quadImage = [
+        id: "olympic",
+        title: "olympic",
+        image: olympicImage,
+    },
     {
-    image: "../logo-images/quadImage.png",
-    }
-]
-
-export const shoulderImage = [
+        id: "quads",
+        title: "quads",
+        image: quadImage,
+    },
     {
-    image: "../logo-images/shoulderImage.png",
-    }
-]
-
-export const strongImage = [
+        id: "shoulders",
+        title: "shoulders",
+        image: shoulderImage,
+    },
     {
-    image: "../logo-images/strongImage.png",
-    }
+        id: "strongwoman",
+        title: "strongwoman",
+        image: strongImage,
+    },
 ];
-
