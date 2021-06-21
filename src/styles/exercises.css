@@ -3,12 +3,20 @@
     padding: 20px;
 }
 
-.exercises-container {
-    border: 2px solid black;
+.bg-image {
+    height: 100vh;
+    background-image: url("../images/barbell4.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 100%;
+    opacity: 0.6;
+    filter: blur(1.3px);
 }
 
-.exercise-types {
-    border: 2px solid black;
+.exercises-container {
+    text-align: center;
+    z-index: 1;
 }
 
 .exercise-groups {

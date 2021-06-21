@@ -179,4 +179,3 @@ export const strongwoman = [
         type: "super yoke",
     },
 ]
- 

@@ -29,7 +29,8 @@ const DailyWorkoutForm = ({ addTask }) => {
                 Add
             </button>
         </form>
+        
     )
-}
+};
 
 export default DailyWorkoutForm;
