@@ -9,10 +9,10 @@ const Exercises = () => {
 
     const [data, setData] = useState([""]);
     const [selected, setSelected] = useState("");
-    const listSelection = ["back", "quads", "shoulders", "hamstrings", "abs", "chest", "arms", "olympic", "olympic", "strongwoman"]
+    const listSelection = ["abs", "arms", "back", "chest", "glutes", "hamstrings", "quads", "shoulders", "olympic", "strongwoman"]
 
     useEffect(() => {
-        setData(exerciseData && exerciseImages[selected])
+        setData(exerciseData[selected])
     }, [selected])
 
     return (
@@ -21,8 +21,8 @@ const Exercises = () => {
             <ul className="exercises-container">
                 {listSelection.map((item) => (
                     <ExerciseList
-                        title={item.title}
-                        active={selected === item.id}
+                        title={item}
+                        selected={selected === item.id}
                         setSelected={setSelected}
                         id={item.id}
                     />
